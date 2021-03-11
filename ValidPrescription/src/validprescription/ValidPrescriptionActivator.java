@@ -23,7 +23,7 @@ public class ValidPrescriptionActivator implements BundleActivator {
 
 	@Override
 	public void stop(BundleContext context) throws Exception {
-		System.out.println("Good Bye !!!");
+		System.out.println("Valid P Good Bye !!!");
 		context.ungetService(serviceReference);
 	}
 
