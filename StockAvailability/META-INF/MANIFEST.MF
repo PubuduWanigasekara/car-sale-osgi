@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: StockAvailability
+Bundle-SymbolicName: StockAvailability
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: stockavailability.StockAvailabilityActivator
+Require-Bundle: org.eclipse.core.runtime
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Automatic-Module-Name: StockAvailability
+Bundle-ActivationPolicy: lazy
+Export-Package: stockavailability
+Import-Package: validprescription
