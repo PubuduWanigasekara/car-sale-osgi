@@ -1,19 +1,19 @@
-package buyproducer;
+package paymentproducer;
 
 import org.osgi.framework.BundleActivator;
-import buyproducer.BuyServicePublish;
-
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.ServiceReference;
 import org.osgi.framework.ServiceRegistration;
 
+import paymentproducer.PaymentServicePublish;
 
-public class Activator implements BundleActivator {
+
+public class PaymentActivator implements BundleActivator {
 	ServiceRegistration publishServiceRegistrion;
 
 	public void start(BundleContext context) throws Exception {
-		BuyServicePublish buyServicePublish = new BuyServicePublishImpl();
-		publishServiceRegistrion = context.registerService(BuyServicePublish.class.getName(), buyServicePublish, null);
+		PaymentServicePublish paymentServicePublish = new PaymentServicePublishImpl();
+		publishServiceRegistrion = context.registerService(PaymentServicePublish.class.getName(), paymentServicePublish, null);
 		System.out.println("Start Buy Service");
 	}
 

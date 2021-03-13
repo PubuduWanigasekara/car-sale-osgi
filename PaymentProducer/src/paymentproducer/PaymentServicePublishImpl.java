@@ -1,8 +1,8 @@
-package buyproducer;
+package paymentproducer;
 
 import java.util.Scanner;
 
-public class BuyServicePublishImpl implements BuyServicePublish {
+public class PaymentServicePublishImpl implements PaymentServicePublish {
 
 	@Override
 	public boolean displayMenuBuy() {
@@ -24,9 +24,11 @@ public class BuyServicePublishImpl implements BuyServicePublish {
 				System.out.println("Invalid Card Number!");
 				cCard = num.nextInt();
 				isvalid = false;
+				
 			}
 
 		}
+		
 		return isvalid;
 
 	}

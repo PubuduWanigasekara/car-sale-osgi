@@ -5,7 +5,7 @@ import org.osgi.framework.BundleContext;
 import org.osgi.framework.ServiceReference;
 import org.osgi.framework.ServiceRegistration;
 
-public class Activator implements BundleActivator {
+public class CartActivator implements BundleActivator {
 
 	ServiceRegistration publishServiceRegistrion;
 

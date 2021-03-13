@@ -1,6 +1,7 @@
-package buyproducer;
 
-public interface BuyServicePublish {
+package paymentproducer;
+
+public interface PaymentServicePublish {
 	
 	boolean displayMenuBuy();
 }
