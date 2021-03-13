@@ -18,7 +18,7 @@ public class Activator implements BundleActivator {
 	}
 
 	public void stop(BundleContext context) throws Exception {
-		System.out.println("Stop Subscriber Service, Good Bye...!");
+		System.out.println("Stop Subscriber Service, Good Bye!");
 		publishServiceRegistrion.unregister();
 		System.out.println("Stop Buy Service");
 	}

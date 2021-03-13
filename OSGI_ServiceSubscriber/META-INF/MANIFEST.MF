@@ -8,5 +8,5 @@ Bundle-RequiredExecutionEnvironment: JavaSE-11
 Import-Package: cartproducer,
  com.mtit.service,
  org.osgi.framework;version="1.3.0"
-Require-Bundle: BuyProducer;bundle-version="1.0.0"
+Require-Bundle: PaymentProducer;bundle-version="1.0.0"
 

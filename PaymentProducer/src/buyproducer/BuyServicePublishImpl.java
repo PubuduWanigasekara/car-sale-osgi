@@ -21,7 +21,7 @@ public class BuyServicePublishImpl implements BuyServicePublish {
 			if (ScardNum.length() == 6) {
 				isvalid = true;
 			} else {
-				System.out.println("Invalid Card Number..!");
+				System.out.println("Invalid Card Number!");
 				cCard = num.nextInt();
 				isvalid = false;
 			}

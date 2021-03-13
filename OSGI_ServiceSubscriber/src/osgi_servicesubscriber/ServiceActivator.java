@@ -42,7 +42,7 @@ public class ServiceActivator implements BundleActivator {
 						
 						System.out.println(isvalid);
 						if (isvalid == true) {
-							System.out.println("Payment Successfully.....");
+							System.out.println("Payment Successfully.");
 							System.out.println("Good Byee! Come Again..");
 						}
 						
@@ -64,7 +64,7 @@ public class ServiceActivator implements BundleActivator {
 
 	public void stop(BundleContext context) throws Exception {
 	
-		System.out.println("Stop Subscriber Service, Good Byee...!");
+		System.out.println("Stop Subscriber Service, Good Byee!");
 		context.ungetService(serviceReference);
 	}
 
