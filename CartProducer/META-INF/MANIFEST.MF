@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: CartProducer
+Bundle-SymbolicName: CartProducer
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: cartproducer.Activator
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Automatic-Module-Name: CartProducer
+Import-Package: com.mtit.service,
+ org.osgi.framework;version="1.3.0"
+Bundle-ActivationPolicy: lazy
+Export-Package: cartproducer
