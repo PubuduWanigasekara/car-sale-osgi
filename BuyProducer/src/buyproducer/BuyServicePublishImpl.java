@@ -6,9 +6,7 @@ public class BuyServicePublishImpl implements BuyServicePublish {
 
 	@Override
 	public boolean displayMenuBuy() {
-		// TODO Auto-generated method stub
-//		System.out.println("\n");
-//		System.out.println("=================Punchi Car Niwasa=====================");
+
 		System.out.print("Enter your Credit Card Number : ");
 
 		boolean isvalid = false;

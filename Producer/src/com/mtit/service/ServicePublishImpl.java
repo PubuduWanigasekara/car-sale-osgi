@@ -8,22 +8,20 @@ public class ServicePublishImpl implements ServicePublish {
 
 	@Override
 	public CartDetail displayMenu() {
-		// TODO Auto-generated method stub
+
 		String con = "Y";
 		int amount = 0;
 
-//		while (con.equalsIgnoreCase("Y")) {
-
 			System.out.println("Publisher start");
-			System.out.println("##########-------Welcome to Punci Car Niwasa-------##########");
-			System.out.println("##########-------Car List-------##########");
-			System.out.println("Honda Vezel RS sensing LED 2016 =  1");
-			System.out.println("Toyota Land Cruiser Sahara Cygnus 2002 =  2");
-			System.out.println("Suzuki Wagon R Stingray 2017 = 3");
-			System.out.println("Peugeot 3008 2018 = 4");
-			System.out.println("Mercedes Benz S300 (LWB) W221 2010 =  5");
-			System.out.println("Mercedes Benz C200 AMG Premium Plus 2019 = 6");
-			System.out.println("##########-------End Of Car List-------##########");
+			System.out.println("------------Welcome to Punci Car Niwasa------------");
+			System.out.println("------------Car List-------------------------------");
+			System.out.println("Honda Vezel RS sensing LED 2016             =  1");
+			System.out.println("Toyota Land Cruiser Sahara Cygnus 2002      =  2");
+			System.out.println("Suzuki Wagon R Stingray 2017                =  3");
+			System.out.println("Peugeot 3008 2018                           =  4");
+			System.out.println("Mercedes Benz S300 (LWB) W221 2010          =  5");
+			System.out.println("Mercedes Benz C200 AMG Premium Plus 2019    =  6");
+			System.out.println("------------End Of Car List------------------------");
 
 			String conBuy = "N";
 			while (conBuy.equalsIgnoreCase("N")) {
@@ -75,6 +73,7 @@ public class ServicePublishImpl implements ServicePublish {
 					break;
 
 				}
+				
 				System.out.print("Do you What to ADD To Cart? : ");
 				Scanner contuBUY = new Scanner(System.in);
 				conBuy = contuBUY.next();

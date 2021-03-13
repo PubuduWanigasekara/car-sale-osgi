@@ -1,14 +1,18 @@
 package osgi_servicesubscriber;
 
 import com.mtit.service.CartDetail;
+
 import com.mtit.service.ServicePublish;
 
 import buyproducer.BuyServicePublish;
 import cartproducer.CartServicePublisher;
 
+import java.util.Scanner;
+
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.ServiceReference;
+
 
 public class ServiceActivator implements BundleActivator {
 	
@@ -25,7 +29,7 @@ public class ServiceActivator implements BundleActivator {
 		
 		String result = respons.getRespons();
 		
-			while(true) {
+			
 				if("Y".equalsIgnoreCase(result)) {
 					serviceReference2 = context.getServiceReference(CartServicePublisher.class.getName());			
 					CartServicePublisher cartServicePublisher = (CartServicePublisher)context.getService(serviceReference2);
@@ -39,9 +43,7 @@ public class ServiceActivator implements BundleActivator {
 						System.out.println(isvalid);
 						if (isvalid == true) {
 							System.out.println("Payment Successfully.....");
-//							System.out.println("\n");
-							System.out.println("Good Byee.....");
-							System.out.println("Come Again.....");
+							System.out.println("Good Byee! Come Again..");
 						}
 						
 					}else {
@@ -50,8 +52,14 @@ public class ServiceActivator implements BundleActivator {
 					}
 		
 				}
+				
+				while(true) {
+					Scanner scn = new Scanner(System.in);
+					scn.nextInt();
+					
+				}
 			}
-		}
+		
 
 
 	public void stop(BundleContext context) throws Exception {
