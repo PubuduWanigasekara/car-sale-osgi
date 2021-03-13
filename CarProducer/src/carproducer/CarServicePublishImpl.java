@@ -1,10 +1,11 @@
-package com.mtit.service;
+package carproducer;
 
 import java.util.HashMap;
 import java.util.Scanner;
-import com.mtit.service.CartDetail;
 
-public class ServicePublishImpl implements ServicePublish {
+import carproducer.CartDetail;
+
+public class CarServicePublishImpl implements CarServicePublish {
 
 	@Override
 	public CartDetail displayMenu() {
@@ -13,6 +14,7 @@ public class ServicePublishImpl implements ServicePublish {
 		int amount = 0;
 
 			System.out.println("Publisher start");
+			System.out.println();
 			System.out.println("------------Welcome to Punci Car Niwasa------------");
 			System.out.println("------------Car List-------------------------------");
 			System.out.println("Honda Vezel RS sensing LED 2016             =  1");
@@ -22,6 +24,7 @@ public class ServicePublishImpl implements ServicePublish {
 			System.out.println("Mercedes Benz S300 (LWB) W221 2010          =  5");
 			System.out.println("Mercedes Benz C200 AMG Premium Plus 2019    =  6");
 			System.out.println("------------End Of Car List------------------------");
+			System.out.println();
 
 			String conBuy = "N";
 			while (conBuy.equalsIgnoreCase("N")) {
@@ -70,15 +73,16 @@ public class ServicePublishImpl implements ServicePublish {
 					break;
 
 				default:
-					break;
-
+					System.out.println("Invalid car number. Please enter valid number");
+					continue;
 				}
 				
-				System.out.print("Do you What to ADD To Cart? : ");
+				System.out.print("Do you Want to ADD To Cart? (Y/N): ");
 				Scanner contuBUY = new Scanner(System.in);
+				
 				conBuy = contuBUY.next();
 			}
-			
+		
 			return new CartDetail(conBuy, amount);
 	}
 }

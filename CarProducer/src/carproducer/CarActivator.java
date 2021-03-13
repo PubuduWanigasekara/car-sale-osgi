@@ -1,17 +1,17 @@
-package com.mtit.service;
+package carproducer;
 
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.ServiceRegistration;
 
-public class ServiceActivator implements BundleActivator {
+public class CarActivator implements BundleActivator {
 
 	ServiceRegistration publishServiceRegistrion;
 
 	public void start(BundleContext context) throws Exception {		
-		ServicePublish publisherService = new ServicePublishImpl();
-		publishServiceRegistrion = context.registerService(ServicePublish.class.getName(), publisherService, null);
-		System.out.println("Start Produce Service");
+		CarServicePublish publisherService = new CarServicePublishImpl();
+		publishServiceRegistrion = context.registerService(CarServicePublish.class.getName(), publisherService, null);
+		System.out.println("Start Car Service");
 		
 	}
 
@@ -19,7 +19,7 @@ public class ServiceActivator implements BundleActivator {
 		
 		System.out.println("Publisher Stop");
 		publishServiceRegistrion.unregister();
-		System.out.println("Stop Produce Service");
+		System.out.println("Stop Car Service");
 	}
 
 }
